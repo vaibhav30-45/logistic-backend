@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/vaibhav30-45/logistic-backend#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.1",
+    "nodemon": "^3.1.10"
   }
 }
