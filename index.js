@@ -1,8 +1,7 @@
-// const createServer = require("./api/login/login.js");
+const app = require('./src/app');
 
-// const server = createServer();
+const PORT = 4000;
 
-// server.listen(4000, () => {
-//     console.log(" Server running at http://localhost:4000");
-// });
-
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
