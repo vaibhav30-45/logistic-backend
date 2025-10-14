@@ -1,2 +1,9 @@
-mongodb+srv://vshrivastava0730:%3CLala3007%3E@vaibhav.nclcods.mongodb.net/?retryWrites=true&w=majority&appName=Vaibhav
-PORT = 4000
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
+  name: { type: String, required: true, trim: true },
+  email: { type: String, required: true, trim: true, unique: true, lowercase: true },
+  password: { type: String, required: true }, // hashed
+}, { timestamps: true });
+
+module.exports = mongoose.model('User', userSchema);
